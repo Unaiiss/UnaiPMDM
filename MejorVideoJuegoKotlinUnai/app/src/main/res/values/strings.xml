@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MejorVideoJuegoKotlin</string>
+    <string name="titulo">¿Cuál es el mejor videojuego?</string>
+    <string name="textPorDefecto">A ver cuál escoges...</string>
+    <string name="inazuma">Inazuma Eleven</string>
+    <string name="darkSouls">Dark Souls</string>
+    <string name="lol">League Of Legends</string>
+    <string name="fallout">Fallout 4</string>
+    <string name="opinionDef">¿Te gusta la encuesta?</string>
+    <string name="opinionPos">¡Sí que te mola!</string>
+    <string name="opinionNeg">¿¡No te mola!?</string>
+    <string name="frikiIE">La mejor elección</string>
+    <string name="frikiFAll">Menudo frikazo niño</string>
+    <string name="frikiDS">Otra vez, menudo frikazo</string>
+    <string name="frikiLOL">Que poco te quieres</string>
+</resources>
