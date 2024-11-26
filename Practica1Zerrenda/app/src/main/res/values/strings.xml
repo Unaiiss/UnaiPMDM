@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica1Zerrenda</string>
+    <string name="titulo">Programazio lengoaiak</string>
+    <string name="tituloBerria">Elementu berria</string>
+    <string name="bGehitu">Gehitu</string>
+    <string name="pHolderId">Id-a idatzi</string>
+    <string name="pHolderName">Izena idatzi</string>
+    <string name="pHolderDesk">Deskribapena hemen</string>
+</resources>
