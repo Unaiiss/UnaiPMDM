@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- Aplikazioaren izenburua -->
     <TextView
-        android:id="@+id/eTitulo"
+        android:id="@+id/txtAppIzenburua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Programazio lengoaiak"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Gehitu botoia -->
+    <Button
+        android:id="@+id/btnGehitu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titulo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        android:text="Gehitu"
+        android:layout_gravity="left"
+        android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/bGehitu"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="279dp"
-        android:text="@string/bGehitu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- RecyclerView taula erakusteko -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reciclerView"
-        android:layout_width="398dp"
-        android:layout_height="467dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="7dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bGehitu" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -7,9 +7,9 @@ public class Elementua {
     private int id;
     private String izena;
     private String deskribapena;
-    private boolean libreaDa;
+    private String libreaDa;
 
-    public Elementua(int id, String izena, String deskribapena, boolean libreaDa) {
+    public Elementua(int id, String izena, String deskribapena, String libreaDa) {
         this.id = id;
         this.izena = izena;
         this.deskribapena = deskribapena;
@@ -29,7 +29,7 @@ public class Elementua {
         return deskribapena;
     }
 
-    public boolean getLibreaDa() {
+    public String getLibreaDa() {
         return libreaDa;
     }
 
@@ -46,22 +46,15 @@ public class Elementua {
         this.deskribapena = deskribapena;
     }
 
-    public void setLibreaDa(boolean libreaDa) {
+    public void setLibreaDa(String libreaDa) {
         this.libreaDa = libreaDa;
     }
 
     // Metodoa: elementuaren datuak pantailan erakusten ditu
     public void erakutsiDatuak() {
-        String librea = "";
-        if (libreaDa){
-            librea = "Librea";
-        } else {
-            librea = "Ez librea";
-        }
-
-        Log.d("Elementua", "ID: " + id + ", Izena: " + izena + ", Deskribapena: " + deskribapena + " " + librea);
+        Log.d("Elementua", "ID: " + id + ", Izena: " + izena + ", Deskribapena: " + deskribapena + " " + libreaDa);
         // Edo kontsola erabiliz:
-        System.out.println("ID: " + id + ", Izena: " + izena + ", Deskribapena: " + deskribapena + " " + librea);
+        System.out.println("ID: " + id + ", Izena: " + izena + ", Deskribapena: " + deskribapena + " " + libreaDa);
     }
 
 }

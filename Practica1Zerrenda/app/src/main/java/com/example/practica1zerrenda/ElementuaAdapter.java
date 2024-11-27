@@ -5,12 +5,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.practica1zerrenda.Elementua;
+
 import java.util.ArrayList;
 
 public class ElementuaAdapter extends RecyclerView.Adapter<ElementuaAdapter.ElementuaViewHolder> {
 
-    private ArrayList<Elementua> elementuakList; // Erakutsi beharreko elementuen zerrenda
+    private final ArrayList<Elementua> elementuakList; // Erakutsi beharreko elementuen zerrenda
 
     // Adaptadorearen eraikitzailea edo constructorea
     public ElementuaAdapter(ArrayList<Elementua> elementuakList) {
@@ -22,9 +22,9 @@ public class ElementuaAdapter extends RecyclerView.Adapter<ElementuaAdapter.Elem
 
         public ElementuaViewHolder(View itemView) {
             super(itemView);
-            txtId = itemView.findViewById(R.id.txtId); // Layout-arekin lotu
-            txtIzena = itemView.findViewById(R.id.txtIzena);
-            txtDeskribapena = itemView.findViewById(R.id.txtDeskribapena);
+            txtId = itemView.findViewById(R.id.etId); // Layout-arekin lotu
+            txtIzena = itemView.findViewById(R.id.etIzena);
+            txtDeskribapena = itemView.findViewById(R.id.etDeskribapena);
         }
     }
 

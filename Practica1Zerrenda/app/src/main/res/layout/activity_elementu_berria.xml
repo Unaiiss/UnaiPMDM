@@ -1,109 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElementuBerria">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- Elementu berria izenburua -->
     <TextView
-        android:id="@+id/tElementuBerria"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtElementuBerria"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="659dp"
-        android:text="@string/tituloBerria"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:text="Elementu berria"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
 
+    <!-- ID eremua -->
     <EditText
         android:id="@+id/etId"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/pHolderId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tElementuBerria" />
+        android:hint="ID sartu"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
 
+    <!-- Izena eremua -->
     <EditText
-        android:id="@+id/etName"
-        android:layout_width="wrap_content"
+        android:id="@+id/etIzena"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/pHolderName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etId" />
+        android:hint="Izena sartu"
+        android:layout_marginBottom="8dp" />
 
+    <!-- Deskribapena eremua -->
     <EditText
-        android:id="@+id/etDesk"
-        android:layout_width="wrap_content"
+        android:id="@+id/etDeskribapena"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/pHolderDesk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName" />
+        android:hint="Deskribapena sartu"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Bi botoi: Gorde eta Itzuli -->
     <Spinner
-        android:id="@+id/libreaSpinner"
-        android:layout_width="168dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="122dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDesk" />
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:layout_width="303dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/libreaSpinner">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
 
+        <!-- Gorde botoia -->
         <Button
-            android:id="@+id/bGorde"
+            android:id="@+id/btnGorde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:text="Gorde" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
+        <!-- Itzuli botoia -->
         <Button
-            android:id="@+id/bItzuli"
+            android:id="@+id/btnItzuli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:text="Itzuli" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
