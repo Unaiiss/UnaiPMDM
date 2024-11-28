@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Datuak prestatu
         elementuak = new ArrayList<>();
-        elementuak.add(new Elementua(1, "Java", "Klaseetan oinarritutako hizkuntza oso erabilia web eta enpresa-aplikazioetan.", "Bai"));
-        elementuak.add(new Elementua(2, "Python", "Sintaxi errazarekin eta moldakortasun handiarekin ezaguna.", "Bai"));
-        elementuak.add(new Elementua(3, "C++", "Errendimendu handia eta kontrol maila altua eskatzen duten aplikazioetarako.", "Ez"));
-        elementuak.add(new Elementua(4, ".NET", "Microsoft-en garapenerako plataforma anitza, bere API sendoarekin.", "Ez"));
-        elementuak.add(new Elementua(5, "Kotlin", "Modernoa eta segurua, Android aplikazioetarako pentsatuta.", "Bai"));
-        elementuak.add(new Elementua(6, "PHP", "Webgune dinamikoak sortzeko oso erabilia, backend garapenerako bereziki egokia.", "Bai"));
+        elementuak.add(new Elementua(1, "Java", "Klaseetan oinarritutako hizkuntza oso erabilia web eta enpresa-aplikazioetan."));
+        elementuak.add(new Elementua(2, "Python", "Sintaxi errazarekin eta moldakortasun handiarekin ezaguna."));
+        elementuak.add(new Elementua(3, "C++", "Errendimendu handia eta kontrol maila altua eskatzen duten aplikazioetarako."));
+        elementuak.add(new Elementua(4, ".NET", "Microsoft-en garapenerako plataforma anitza, bere API sendoarekin."));
+        elementuak.add(new Elementua(5, "Kotlin", "Modernoa eta segurua, Android aplikazioetarako pentsatuta."));
+        elementuak.add(new Elementua(6, "PHP", "Webgune dinamikoak sortzeko oso erabilia, backend garapenerako bereziki egokia."));
 
         // RecyclerView layout-ean bilatu eta konfiguratu
         RecyclerView recyclerView = findViewById(R.id.recyclerView);

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RepasoConInazuma</string>
+    <string name="tvTitulo">Personajes Inazuma</string>
+    <string name="tvTituloAgregar">Agregar personaje</string>
+    <string name="botonAñadir">Añadir</string>
+    <string name="botonEditar">Editar</string>
+    <string name="botonVolver">Volver</string>
+    <string name="botonGuardar">Guardar</string>
+</resources>
