@@ -6,4 +6,11 @@
     <string name="botonEditar">Editar</string>
     <string name="botonVolver">Volver</string>
     <string name="botonGuardar">Guardar</string>
+
+    <string-array name="valores_spinner">
+        <item>Delantero</item>
+        <item>Centro campista</item>
+        <item>Defensa</item>
+        <item>Portero</item>
+    </string-array>
 </resources>
