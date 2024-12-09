@@ -13,6 +13,10 @@
         android:theme="@style/Theme.RepasoConInazuma"
         tools:targetApi="31">
         <activity
+            android:name=".EditarPersonaje"
+            android:exported="false"
+            android:theme="@style/Theme.RepasoConInazuma" />
+        <activity
             android:name=".AgregarPersonaje"
             android:exported="false" />
         <activity

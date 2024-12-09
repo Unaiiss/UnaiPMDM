@@ -25,6 +25,37 @@ public class PersonajeManager {
         return azkenId + 1; // Hurrengo ID-a
     }
 
+    public boolean existePersonaje(String id) {
+        for (Personaje personaje : personajes) {
+            if (personaje.getId() == Integer.parseInt(id)) {
+                return true;
+            }
+        }
+        return false; // No se ha encontrado
+    }
+
+    public Personaje recogerPersonaje(String id) {
+        for (Personaje personaje : personajes) {
+            if (personaje.getId() == Integer.parseInt(id)) {
+                return personaje;
+            }
+        }
+        return null; // No se ha encontrado
+    }
+
+    public boolean editarPersonaje(int id, String nuevoNombre, String nuevoApellido, String nuevaPosicion) {
+        for (Personaje personaje : personajes) {
+            if (personaje.getId() == id) {
+                // Aurkitutako elementuaren datuak aldatu
+                personaje.setNombre(nuevoNombre);
+                personaje.setApellido(nuevoApellido);
+                personaje.setPosicion(nuevaPosicion);
+                return true; // El cambio se ha realizado
+            }
+        }
+        return false; // No se ha encontrado
+    }
+
     // Datuak gehitzeko metodoa
     public void gehituElementua(Personaje personaje) {
         personajes.add(personaje);
